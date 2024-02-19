@@ -6,24 +6,32 @@ import avatarImg from '../images/image-avatar.webp';
 ---
 
 <Layout>
-    <main>
-        <Image src={articleImg} alt="article image"  />
-        <div>
-            Learning
-        </div>
-        <p>Published 21 Dec 2023</p>
-        <h1>HTML & CSS Foundations</h1>
-        <p>
-            These languages are the backbone of
-            every website, defining structure
-            content and presentation.
-        </p>
-        <div>
-            <Image src={avatarImg} alt="avatar image" />
-            <span>
-                <b>Greg Hooper</b>
-            </span>
-        </div>
+    <main class="w-[100vw] h-[100vh] flex justify-center items-center bg-yellow">
+        <section id="card">
+            <Image src={articleImg} alt="article image"  />
+            <div class="font-big">
+                Learning
+            </div>
+            <p class="font-small">Published 21 Dec 2023</p>
+            <h1 class="font-big">HTML & CSS Foundations</h1>
+            <p class="font-big">
+                These languages are the backbone of
+                every website, defining structure
+                content and presentation.
+            </p>
+            <div>
+                <Image src={avatarImg} alt="avatar image" />
+                <span class="font-big"">
+                    Greg Hooper
+                </span>
+            </div>
+        </section>
     </main>
 </Layout>
+
+<style>
+    .bg-yellow {
+        background-color: var(--yellow);
+    }
+</style>
 
