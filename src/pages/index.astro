@@ -6,24 +6,31 @@ import avatarImg from '../images/image-avatar.webp';
 ---
 
 <Layout>
-    <main>
-        <Image src={articleImg} alt="article image"  />
-        <div>
-            Learning
-        </div>
-        <p>Published 21 Dec 2023</p>
-        <h1>HTML & CSS Foundations</h1>
-        <p>
-            These languages are the backbone of
-            every website, defining structure
-            content and presentation.
-        </p>
-        <div>
-            <Image src={avatarImg} alt="avatar image" />
-            <span>
-                <b>Greg Hooper</b>
-            </span>
-        </div>
+    <main class="w-[100vw] h-[100vh] flex justify-center items-center bg-yellow">
+        <section class="max-w-[90%] md:max-w-auto flex w-96 flex-col items-start bg-white border-2 border-black rounded-xl p-5 gap-3" id="card">
+            <Image class="w-full rounded-xl" src={articleImg} alt="article image"  />
+            <div class="font-big bg-yellow p-1 pl-2 pr-2 text-sm w-auto">
+                Learning
+            </div>
+            <p class="font-small">Published 21 Dec 2023</p>
+            <h1 class="font-big text-2xl cursor-pointer transition-colors hover:text-yellow-400">HTML & CSS Foundations</h1>
+            <p class="font-big max-w-96 gray">
+                These languages are the backbone of
+                every website, defining structure
+                content and presentation.
+            </p>
+            <div class="flex gap-3 items-center">
+                <Image src={avatarImg} alt="avatar image" />
+                <span class="font-big"">
+                    Greg Hooper
+                </span>
+            </div>
+        </section>
     </main>
 </Layout>
+
+<style>
+    .bg-yellow {background-color: var(--yellow);}
+    .gray {color: var(--gray);}
+</style>
 
