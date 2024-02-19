@@ -7,19 +7,19 @@ import avatarImg from '../images/image-avatar.webp';
 
 <Layout>
     <main class="w-[100vw] h-[100vh] flex justify-center items-center bg-yellow">
-        <section class="flex w-96 flex-col bg-white border-2 border-black rounded-xl p-6" id="card">
+        <section class="flex w-96 flex-col items-start bg-white border-2 border-black rounded-xl p-5 gap-3" id="card">
             <Image class="w-full rounded-xl" src={articleImg} alt="article image"  />
-            <div class="font-big">
+            <div class="font-big bg-yellow p-1 pl-2 pr-2 text-sm w-auto">
                 Learning
             </div>
             <p class="font-small">Published 21 Dec 2023</p>
-            <h1 class="font-big">HTML & CSS Foundations</h1>
-            <p class="font-big">
+            <h1 class="font-big text-2xl">HTML & CSS Foundations</h1>
+            <p class="font-big max-w-96 gray">
                 These languages are the backbone of
                 every website, defining structure
                 content and presentation.
             </p>
-            <div>
+            <div class="flex gap-3 items-center">
                 <Image src={avatarImg} alt="avatar image" />
                 <span class="font-big"">
                     Greg Hooper
@@ -31,5 +31,6 @@ import avatarImg from '../images/image-avatar.webp';
 
 <style>
     .bg-yellow {background-color: var(--yellow);}
+    .gray {color: var(--gray);}
 </style>
 
